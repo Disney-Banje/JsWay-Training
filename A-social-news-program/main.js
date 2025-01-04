@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const links = [];
 
 
-    // Create a link constructor function 
+    // Create a link ojbect template 
     class Link {
         constructor(title, url, author) {
             this.title = title;
