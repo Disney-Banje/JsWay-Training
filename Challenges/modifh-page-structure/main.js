@@ -82,7 +82,6 @@ miniDictionary.appendChild(dl);
 
 
 
-
 // Information about an element
 const info = getComputedStyle(document.getElementById('info'));
 const infos = document.getElementById('infos');
