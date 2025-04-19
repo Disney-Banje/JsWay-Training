@@ -1,0 +1,17 @@
+[
+    {
+        "author": "Baptiste",
+        "title": "Hacker News",
+        "URL": "https://news.ycombinator.com"
+    },
+    {
+        "author": "Thomas",
+        "title": "Reddit",
+        "URL": "https://reddit.com"
+    },
+    {
+        "author": "Daniel",
+        "title": "Boing Boing",
+        "URL": "http://boingboing.net"
+    }
+]
