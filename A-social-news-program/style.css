@@ -31,7 +31,6 @@ button {
     background-color: transparent;
     border: none;
     cursor: pointer;
-    color: li;
 }
 
 a {
@@ -41,7 +40,7 @@ a {
 
 body {
     font-family: 'Outfit';
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     line-height: 1.2;
     background-color: var(--background-color);
     color: var(--text-color);
@@ -49,7 +48,22 @@ body {
 }
 
 #app {
-    margin: auto 2.4rem;
+    margin: auto;
+    padding: 0 2.0rem;
+    max-width: 90.5rem;
+}
+
+.page-link--wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.page-log {
+    color: gray;
+    text-decoration: none;
+    font-size: 2.8rem;
+    font-weight: 500;
 }
 
 .navigation-menu,
@@ -62,10 +76,13 @@ li {
     padding: 1.6rem;
     display: flex;
     justify-content: space-between;
+    gap: 2.0rem;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 button {
+    font-size: 1.7rem;
     background-color: var(--submit-btn-background-color);
     padding: 0.5rem 1.5rem;
     border-radius: 0.4rem;
@@ -80,6 +97,7 @@ button {
 
 li {
     padding: 1.2rem;
+    cursor: pointer;
 }
 
 h1 {
@@ -88,11 +106,16 @@ h1 {
 }
 
 a {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    transition: all 250ms;
+}
+
+a:hover {
+    color: magenta;
 }
 
 .author-details {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
 
 .link-details {
