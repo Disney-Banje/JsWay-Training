@@ -20,6 +20,9 @@ fetch(pageSource)
 
 
 
+
+
+
 const paintingsSource = "https://raw.githubusercontent.com/bpesquet/thejsway/master/resources/paintings.json";
 
 const table = document.getElementById('paintings');
@@ -41,3 +44,41 @@ fetch(paintingsSource)
         table.appendChild(tableRow);
     })
   })
+  .catch(err => {
+    const tableDisplay = document.querySelector('.table-display');
+    tableDisplay.innerHTML = '';
+    tableDisplay.innerHTML = `Error loanding paintings: ${err.message}`;
+  });
+
+
+
+
+
+// Information about a GitHub user
+
+const lookupBtn = document.querySelector('.lookup-btn');
+const userInput = document.querySelector('#user-name');
+
+const gitHubUrl = '';
+
+
+// Create user card
+function createUserCard(avatar, name, link) {
+
+  const article = document.createElement('article');
+  article.classList.add('user-card');
+
+  const userAvatar = document.createElement('img');
+  userAvatar.src = avatar;
+  userAvatar.alt = name;
+  const userName = document.createElement('p');
+  userName.textContent = name;
+  const userLink = document.createElement('a');
+  userLink.href = link;
+  userLink.textContent = link;
+
+  article.append(userAvatar, userName, userLink);
+
+  return article;
+  
+}
