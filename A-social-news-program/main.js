@@ -7,6 +7,7 @@ let linkList;
 const listWrapper = document.querySelector('.link-list');
 const submitBtn = document.querySelector('.submit-btn');
 
+
 // get the data..
 fetch('./data.json')
   .then(response => response.json())
@@ -18,8 +19,17 @@ fetch('./data.json')
         const card = linkWrapper(link.author, link.title, link.URL);
         liWrapper.appendChild(card);
         listWrapper.appendChild(liWrapper);
-    })
+    });
+
+    submitBtn.addEventListener('click', (ev) => {
+      const form = formWrapper();
+      listWrapper.appendChild(form);
+    });
+
+    console.log(linkList);
   })
   .catch(err => {
     console.error(err.message);
   });
+
+

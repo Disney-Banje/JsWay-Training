@@ -23,6 +23,13 @@ html {
     --link-color: orange;
 }
 
+input {
+    padding: 0.5rem 1.2rem;
+    border-radius: 0.4rem;
+    outline: none;
+    border: none;
+}
+
 ul {
     list-style-type: none;
 }
@@ -122,6 +129,15 @@ a:hover {
     display: flex;
     align-items: center;
     gap: 0.8rem;
-    margin-bottom: 1.0rem;
+    margin-bottom: 0.5rem;
 }
 
+input:focus {
+    color: var(--link-color);
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2rem;
+}
