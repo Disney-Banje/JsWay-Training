@@ -79,7 +79,7 @@ li {
 }
 
 .navigation-menu {
-    margin-bottom: 2.8rem;
+    margin-bottom: 2.5rem;
     padding: 1.6rem;
     display: flex;
     justify-content: space-between;
@@ -96,10 +96,19 @@ button {
     color: var(--wrapper-background-color);
 }
 
+.success-message {
+    margin: 1.5rem;
+    text-align: center;
+    padding: 2.0rem;
+    color: green;
+    background-color: greenyellow;
+}
+
 .link-list {
+    margin: 1.5rem auto;
     display: flex;
     flex-direction: column;
-    gap: 2.0rem;
+    gap: 1.2rem;
 }
 
 li {
